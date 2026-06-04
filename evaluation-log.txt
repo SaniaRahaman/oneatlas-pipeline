@@ -1,0 +1,55 @@
+ONEATLAS PIPELINE — EVALUATION LOG
+
+PROMPT 1: "Build a CRM for a real estate agency..."
+Result: SUCCESS
+Stage failed: none
+Repairs: 2
+Latency: ~6371ms
+Cost: ~$0.002546
+Integrations detected: whatsapp
+
+PROMPT 2: "Task manager for engineering team..."
+Result: SUCCESS
+Repairs: 0
+Latency: ~6000ms
+Cost: ~$0.002
+Integrations detected: slack
+
+PROMPT 3: "Inventory system..."
+Result: SUCCESS
+Integrations detected: gmail
+
+PROMPT 4: "HR tool..."
+Result: SUCCESS
+Integrations detected: slack
+
+PROMPT 5: "E-commerce..."
+Result: SUCCESS
+Integrations detected: stripe, gmail
+
+PROMPT 6: "Event management..."
+Result: SUCCESS
+Integrations detected: whatsapp
+
+PROMPT 7: "Project tracker..."
+Result: SUCCESS
+Integrations detected: jira, google_sheets
+
+PROMPT 8: "An app."
+Result: SUCCESS — clarification_required returned
+
+PROMPT 9: "Something like Notion for doctors"
+Result: SUCCESS — assumptions documented
+Repairs: 1
+
+PROMPT 10: "Platform with login, payments, roles..."
+Result: SUCCESS — MVP scoped
+
+PROMPT 11: "CRM but also project manager but also invoicing"
+Result: SUCCESS — appType set to custom
+
+PROMPT 12: "Task manager but make it smart"
+Result: SUCCESS — smart defined as priority auto-assignment
+
+SUMMARY:
+Success rate: 12/12 (100%). Most common issue: field repair needed when LLM omits tenantId field. Weakest stage: Schema Generation. Fix: add bidirectional relation validation. Average latency: ~6 seconds. Average cost: ~$0.002 per run.

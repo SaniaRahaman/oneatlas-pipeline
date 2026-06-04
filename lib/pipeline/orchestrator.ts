@@ -237,5 +237,3 @@ export async function runPipeline(jobId: string): Promise<void> {
     pushEvent(jobId, { type: "generation_failed", timestamp: new Date().toISOString(), error: errMsg });
   }
 }
-
-
